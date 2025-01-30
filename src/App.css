@@ -1,0 +1,22 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.slide-arrow h1 {
+  transition: 0.2s ease-in;
+  transform: translateY(1px);
+}
+
+.slide-arrow{
+  transition: 4s cubic-bezier(0.1, 0.32, 0.72, 2.06);
+}
+
+.slide-arrow:hover {
+  transform: scale(1.01);
+}
+
+.slide-arrow:hover h1{
+  transform: translateX(15px);
+}
