@@ -16,7 +16,6 @@ function App() {
     <SignUp/>
     <Executives/>
     <Mission/>
-    <Contact/>
     <Programs/>
     <Footer/>
     </>
