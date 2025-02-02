@@ -15,7 +15,7 @@ function Navbar(){
                 <section className="w-screen navbarA h-12 md:h-16 bg-white flex justify-center items-center text-sm md:text-lg">
                     <div className="w-full flex flex-row justify-between items-center">
                         <div className="text-white w-1/6 h-1/2 hidden md:block ml-20">
-                            <img src="src/assets/LongLogo.png" className="logo h-10"/>
+                            <img src="/assets/LongLogo.png" className="logo h-10"/>
                         </div>
                         <div className="text-white flex flex-row w-full md:w-2/5 md:mr-12 h-1/2 justify-around items-center md:justify-between">
                             <a onClick={() => redirectToLink('#home')}>
