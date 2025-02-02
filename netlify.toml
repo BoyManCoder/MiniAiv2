@@ -1,0 +1,19 @@
+[build]
+  # The build command that will run to generate your site
+  command = "npm run build"  # Adjust this depending on your build process
+  publish = "dist"           # The directory where your built files will be published (e.g., "dist", "build", or "public")
+
+[[redirects]]
+  # Redirects for image handling (optional if you need to manage image URL redirects)
+  from = "/old-path/*"
+  to = "/new-path/:splat"
+  status = 301
+  force = true
+
+[build.environment]
+  # Environment variables for build process (if needed)
+  NODE_ENV = "production"
+
+[[plugins]]
+  # Example of using Netlify’s Image optimization plugin
+  package = "@netlify/plugin-image-optimizer"
