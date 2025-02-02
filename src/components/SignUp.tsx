@@ -24,7 +24,7 @@ function SignUp() {
             </button>
           </div>
           <div className="w-full h-2/5 md:w-1/2 md:h-full flex justify-end items-center">
-            <img src="public/assets/Robo.jpg" className="h-full w-full md:h-full md:w-7/8" />
+            <img src="/assets/Robo.jpg" className="h-full w-full md:h-full md:w-7/8" />
           </div>
         </div>
       </section>

@@ -16,7 +16,7 @@ function TDSB() {
       </div>
       <div className="w-2/5 h-9/10 bg-gray-100 flex justify-center items-center">
         <div className="w-5/6 h-5/6 flex justify-center items-center">
-        <img src="public/assets/TDSB.jpg" className="object-contain"/>
+        <img src="/assets/TDSB.jpg" className="object-contain"/>
         </div>
       </div>
     </section>
@@ -39,7 +39,7 @@ function Daisy() {
       </div>
       <div className="w-2/5 h-9/10 bg-gray-100 flex justify-center items-center">
         <div className="w-5/6 h-5/6 flex justify-center items-center">
-        <img src="public/assets/Daisy.jpg" className="object-contain"/>
+        <img src="/assets/Daisy.jpg" className="object-contain"/>
         </div>
       </div>
     </section>
@@ -51,7 +51,7 @@ function Basics() {
     <section className="h-[500px] w-screen bg-main flex flex-col md:flex-row justify-center items-center">
       <div className="w-2/5 h-9/10 bg-gray-100 flex justify-center items-center">
         <div className="w-5/6 h-5/6 flex justify-center items-center">
-          <img className="h-5/7 w-full" src="public/assets/Basic.jpeg"/>
+          <img className="h-5/7 w-full" src="/assets/Basic.jpeg"/>
         </div>
       </div>
       <div className="w-2/5 h-9/10 bg-gray-100 px-4 flex flex-col justify-around">

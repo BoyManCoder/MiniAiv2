@@ -16,22 +16,22 @@ const programsData = [
     title: "TDSB AI Workshops",
     description:
       "In partnership with the Toronto District School Board, we hosted three in-person workshops at Pierre Laporte Middle School, bringing AI education directly to Grade 8 students. ",
-    image: "public/assets/TDSB.jpg",
-    logo: "public/assets/TDSBLogo.png",
+    image: "/assets/TDSB.jpg",
+    logo: "/assets/TDSBLogo.png",
   },
   {
     title: "Mini AI & Baycrest Hospital",
     description:
       "In collaboration with Baycrest Hospital, we introduced elderly patients to the wonders of ChatGPT and DALL·E, showing them how AI can enhance creativity. By bridging the generational gap in technology, we empowered seniors to engage with AI in a meaningful way, fostering curiosity and connection.",
-    image: "public/assets/Daisy.jpg",
-    logo: "public/assets/Baycrest.png",
+    image: "/assets/Daisy.jpg",
+    logo: "/assets/Baycrest.png",
   },
   {
     title: "AI Basics Course",
     description:
       "Welcome to MiniAI, a completely FREE Artificial Intelligence learning course for selected students in Grades 8-12. Our lessons will include informative guest speakers from multiple big name tech companies, including Microsoft, Facebook, and Amazon.",
-    image: "public/assets/Basic.jpeg",
-    logo: "public/assets/LongLogo.png",
+    image: "/assets/Basic.jpeg",
+    logo: "/assets/LongLogo.png",
   },
 ];
 
