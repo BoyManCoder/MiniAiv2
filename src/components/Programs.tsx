@@ -11,7 +11,7 @@ function TDSB() {
           </p>
         </div>
         <div className="w-5/6 h-4/9 flex flex-row justify-around items-start">
-          <img src="src/assets/TDSBLogo.png" className="w-1/3 h-2/3"/>
+          <img src="/assets/TDSBLogo.png" className="w-1/3 h-2/3"/>
         </div>
       </div>
       <div className="w-2/5 h-9/10 bg-gray-100 flex justify-center items-center">
@@ -34,7 +34,7 @@ function Daisy() {
           </p>
         </div>
         <div className="w-5/6 h-4/9 flex flex-row justify-around items-start">
-          <img src="src/assets/Baycrest.png"/>
+          <img src="/assets/Baycrest.png"/>
         </div>
       </div>
       <div className="w-2/5 h-9/10 bg-gray-100 flex justify-center items-center">

@@ -3,19 +3,22 @@ import React from "react";
 function Executives() {
   const ExecInfo = [
     {
-      name: "Srigan Siva.",
+      name: "Srigan Siva",
       position: "CEO",
-      desc: "Description here",
+      desc: "Srigan Siva is our CEO and oversees all major operations. He coordinates partnerships, funding, and ensures that all programs and events run smoothly.",
+      image: "/assets/srigan.jpg",
     },
     {
       name: "Vedant Kansara",
       position: "COO",
-      desc: "Description here",
+      desc: "Vedant Kansara is a talented educator tasked with the development of our curriculums, programs, and media. He ensures that presenters, presentations, and activities are all held to a high standard.",
+      image: "/assets/vedant.jpg",
     },
     {
       name: "Hani Mahdi",
       position: "Web Developer",
-      desc: "How long can this really be before bugs and things like that begin to be experienced",
+      desc: "Hani Mahdi is a computer programmer with a knack for web development. Hani creates, updates, and maintains our web app to ensure our online presence continues to attract youth to our programs.",
+      image: "/assets/hani.jpg",
     },
   ];
 
@@ -23,7 +26,7 @@ function Executives() {
     <>
       <section
         id="exec"
-        className="mt-10 w-screen py-2 h-280 md:h-120 bg-main text-black flex flex-col justify-between"
+        className="mt-10 w-screen py-2 h-350 md:h-120 bg-main text-black flex flex-col justify-between"
       >
         <h1 className="text-center text-3xl my-4 font-semibold text-white">Executive Team</h1>
         <div className="w-full h-full md:w-full md:h-4/5 flex flex-col md:flex-row justify-evenly items-center">
@@ -31,14 +34,14 @@ function Executives() {
           {ExecInfo.map((exec, index) => (
             <div
               key={index}
-              className="w-2/3 my-4 h-1/3 md:w-1/5 md:h-full flex flex-col justify-around p-4 bg-bright rounded-lg shadow-md relative overflow-hidden"
+              className="w-3/4 my-4 h-2/7 md:w-1/5 md:h-full flex flex-col justify-around p-4 bg-bright rounded-lg shadow-md relative overflow-hidden"
             >
             
               <div className="h-4/6 w-full flex justify-center items-center bg-gray-200 relative">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src={exec.image}
                   alt={`${exec.name}'s image`}
-                  className="w-full h-full object-cover rounded-full transition-opacity duration-500 ease-in-out opacity-100 hover:opacity-0"
+                  className="w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-100 hover:opacity-0"
                 />
                 
                 <div className="absolute inset-0 flex justify-center m-2 items-center opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out">

@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
   padding: 0;
   font-family: 'Noto Serif Hentaigana';
+  scroll-behavior: smooth;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
 
