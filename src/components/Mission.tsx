@@ -3,8 +3,8 @@ import React from "react";
 function Mission(){
     return(<>
     
-    <h1 className="mt-40 mb-6 text-center text-4xl font-semibold">About Mini Ai</h1>
-    <section id="mission" className="w-screen h-screen md:h-110 flex justify-center items-center">
+    <h1 className="mt-14 md:mt-40 mb-6 text-center text-4xl font-semibold">About Mini Ai</h1>
+    <section id="mission" className="w-screen h-200 md:h-110 flex justify-center items-center">
         <div className="w-full h-full flex flex-col md:flex-row">
             <div className="w-full h-4/5 md:w-3/5 md:h-full flex flex-col md:flex-row justify-evenly items-center">
                 <div className="h-1/2 w-5/6 md:w-2/5 md:h-full my-4">
@@ -25,7 +25,7 @@ function Mission(){
                 </div>
             </div>
             <div className=" w-full h-1/5 my-4 md:w-2/5 md:h-4/5 flex justify-center items-center">
-                <img src="src/assets/Class.jpg" className="h-7/8 w-7/8 border-black border-2 rounded"/>
+                <img src="src/assets/Class.jpg" className="h-full w-3/4 md:h-7/8 md:w-7/8 border-black border-1 md:border-2 rounded"/>
             </div>
         </div>
     </section>

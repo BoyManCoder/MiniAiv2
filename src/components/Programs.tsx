@@ -61,9 +61,14 @@ function Basics() {
           Welcome to MiniAI, a completely FREE Artificial Intelligence learning course for selected students in Grades 8-12. Over the summer, you will learn everything you need to know in order to become resourceful with AI. Each week we will have a new lesson, so bring your notepads. Along with that, our lessons will include informative guest speakers from multiple big name tech companies, including Microsoft, Facebook, and Amazon.
           </p>
         </div>
-        <div className="w-5/6 h-1/9 flex flex-row justify-center items-start">
+        <div className="w-5/6 h-1/9 flex flex-row justify-start items-end">
           <h1>
-            <b>Note:</b> Special thanks to Presenter 1, Presenter 2, Presenter 3
+            <b>Note:</b> Special thanks to:
+            <ul>
+              <li>Tong Su - Meta Senior Software Engineer</li>
+              <li>Richard Zhang - Amazon Senior Software Engineer</li>
+              <li>Ugan Siva - Microsoft Senior Product Manager</li>
+            </ul>
           </h1>
         </div>
       </div>
@@ -87,7 +92,7 @@ function Programs() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
@@ -95,7 +100,7 @@ function Programs() {
     <>
       <h1 className="text-center text-4xl font-semibold mt-20 mb-6">Programs & Events</h1>
 
-      <section className="relative w-screen mb-20 h-[500px] overflow-hidden">
+      <section className="hidden md:block relative w-screen mb-20 h-[500px] overflow-hidden">
         <div
           className="flex w-full h-full transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
