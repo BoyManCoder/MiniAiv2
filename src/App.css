@@ -81,21 +81,21 @@ html {
 }
 
 .navbarB{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-top: 6px;
   padding-bottom: 6px;
   border-radius: 1px;
-  background: var(--color-dark);
+  color: black;
 }
 
 .navbarB:hover{
-  background: rgba(127, 248, 155, 0.1);
-  color: white;
+  background: rgba(127, 248, 155, 0.6);
+  color: black;
 }
 
 nav{
-  box-shadow: 0px 1px 2px 1px black;
+  box-shadow: 0px 1px 10px 1px black;
   z-index: 10;
   position: relative;
 }

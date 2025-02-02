@@ -49,7 +49,7 @@ function ProgramsMobile() {
 
   return (
     <section className="w-full px-4 py-6">
-      <h1 className="text-center text-2xl font-semibold mt-18 mb-4">Programs & Events</h1>
+      <h1 id="events" className="text-center text-2xl font-semibold mt-18 mb-4">Programs & Events</h1>
       <div className="w-full overflow-hidden">
         {programsData.map((program, index) => (
           <div

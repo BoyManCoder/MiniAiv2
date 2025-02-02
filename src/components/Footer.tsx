@@ -1,5 +1,4 @@
 import React from "react";
-import Socials from "./Socials";
 
 function Footer() {
   return (
@@ -11,10 +10,10 @@ function Footer() {
             <div className="flex flex-col sm:flex-row sm:items-start sm:w-3/5 w-full">
               <div className="flex flex-col sm:flex-row justify-center sm:justify-start w-full mb-6 sm:mb-0">
                 <ul className="flex flex-wrap justify-center sm:flex-col sm:justify-start space-x-4 sm:space-x-0 sm:space-y-2 text-center sm:text-left">
-                  <li><a href="#found" className="hover:underline">Home</a></li>
-                  <li><a href="#about" className="hover:underline">Events</a></li>
-                  <li><a href="#program" className="hover:underline">Executives</a></li>
-                  <li><a href="#contact" className="hover:underline">Mission</a></li>
+                  <li><a href="#home" className="hover:underline">Home</a></li>
+                  <li><a href="#events" className="hover:underline">Events</a></li>
+                  <li><a href="#exec" className="hover:underline">Executives</a></li>
+                  <li><a href="#mission" className="hover:underline">Mission</a></li>
                 </ul>
               </div>
             </div>
