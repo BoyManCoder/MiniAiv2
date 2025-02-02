@@ -38,7 +38,7 @@ function Mission(){
                         </div>
                     </div>
                     <div className="w-full h-1/5 my-4 md:w-2/5 md:h-4/5 flex justify-center items-center">
-                        <img src="src/assets/Class.jpg" className="h-full w-3/4 md:h-7/8 md:w-7/8 border-black border-1 md:border-2 rounded"/>
+                        <img src="public/assets/Class.jpg" className="h-full w-3/4 md:h-7/8 md:w-7/8 border-black border-1 md:border-2 rounded"/>
                     </div>
                 </div>
             </section>
