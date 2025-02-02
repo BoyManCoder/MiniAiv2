@@ -1,5 +1,4 @@
 import React from "react";
-import Long from "../assets/Long";
 
 function Navbar(){
     // Function to handle redirects
@@ -10,7 +9,7 @@ function Navbar(){
     return (
         <>
             <div className="md:hidden w-full h-10 bg-white flex flex-row justify-center items-center text-white">
-                <img src="src/assets/LongLogo.png" className="logo h-8"/>
+                <img src="/assets/LongLogo.png" className="logo h-8"/>
             </div>
             <nav>
                 <section className="w-screen navbarA h-12 md:h-16 bg-white flex justify-center items-center text-sm md:text-lg">
