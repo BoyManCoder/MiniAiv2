@@ -3,7 +3,7 @@ import React from "react";
 function SignUp() {
   // Redirect function
   const handleEnrollClick = () => {
-    window.location.href = "https://forms.gle/QzK5R4pXzLGgDHFu6"; // Your enrollment link
+    window.location.href = "https://forms.gle/QzK5R4pXzLGgDHFu6"; //enrollment link
   };
 
   return (
@@ -12,10 +12,9 @@ function SignUp() {
         <div className="w-4/5 h-full bg-main rounded flex flex-col md:flex-row justify-between">
           <div className="w-full h-2/5 md:w-1/2 md:h-full md:ml-4 p-2 flex flex-col md:items-start items-center justify-center">
             <h1 className="text-4xl font-semibold mt-14 md:my-2 mb-2 md:mb-4">Sign Up Today</h1>
-            <p className="text-center md:text-left my-2">
+            <p className="text-center md:text-left my-4">
               Enlist now to always be notified with our latest events, courses, and other informative AI content.
             </p>
-            {/* Enroll Now button with onClick */}
             <button
               onClick={handleEnrollClick}
               className="bg-light w-5/6 md:w-28 text-center py-2 rounded md:my-6 text-lg hover:bg-green-700 transition-all"
