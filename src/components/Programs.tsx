@@ -98,9 +98,9 @@ function Programs() {
 
   return (
     <>
-      <h1 className="text-center text-4xl font-semibold mt-20 mb-6">Programs & Events</h1>
+      <h1 id="events" className="text-center text-4xl font-semibold mt-20 mb-6">Programs & Events</h1>
 
-      <section id="events" className="hidden md:block relative w-screen mb-20 h-[500px] overflow-hidden">
+      <section className="hidden md:block relative w-screen mb-20 h-[500px] overflow-hidden">
         <div
           className="flex w-full h-full transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}

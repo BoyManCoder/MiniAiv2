@@ -1,61 +1,6 @@
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
-import { motion, AnimatePresence } from "framer-motion";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
-function ResponsiveMenu({ open, setOpen }) {
-  const handleLinkClick = () => {
-    // Close the menu when a link is clicked
-    setOpen(false);
-  };
-
-  return (
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -100 }}
-          transition={{ duration: 0.3 }}
-          className="absolute top-20 left-0 w-full h-screen bg-gray-500/30 z-20"
-        >
-          <div className="text-md font-semibold uppercase bg-gradient-to-r from-green-500 to-teal-500 text-white py-10 m-6 rounded-3xl">
-            <ul className="flex flex-col justify-center items-center gap-4 border-b-2 border-t-2">
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-                className="p-4 cursor-pointer"
-              >
-                <a href="#home" onClick={handleLinkClick}>Home</a>
-              </motion.li>
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-                className="p-4 cursor-pointer"
-              >
-                <a href="#exec" onClick={handleLinkClick}>Executives</a>
-              </motion.li>
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-                className="p-4 cursor-pointer"
-              >
-                <a href="#mission" onClick={handleLinkClick}>Mission</a>
-              </motion.li>
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-                className="p-4 cursor-pointer"
-              >
-                <a href="#events" onClick={handleLinkClick}>Events</a>
-              </motion.li>
-            </ul>
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-}
 
 function Navbar() {
   const NavbarMenu = [
@@ -70,12 +15,12 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div className="container flex justify-between items-center py-3">
+        <div className="container flex flex-row flex-row justify-between items-center py-3">
           <div className="flex items-center gap-2">
             <img src="/assets/LongLogo.png" className="w-34 ml-6 md:ml-20" />
           </div>
-          <div className="hidden md:block">
-            <ul className="flex items-center gap-6 text-gray-600">
+          <div className="hidden md:flex items-center gap-6 text-gray-600">
+            <ul className="flex items-center gap-6">
               {NavbarMenu.map((item) => (
                 <li key={item.id}>
                   <a
@@ -116,8 +61,24 @@ function Navbar() {
             </div>
           </div>
         </div>
+
+        {/* Mobile links block under the logo */}
+        <div className={`w-full md:hidden h-12 flex items-center justify-center bg-black text-white py-5 ${open ? 'block' : 'hidden'}`}>
+          <ul className="flex items-center justify-center gap-2">
+            {NavbarMenu.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={item.link}
+                  className="py-2 px-4 hover:text-gray-400"
+                  onClick={() => setOpen(false)} // Close menu when link is clicked
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
-      <ResponsiveMenu open={open} setOpen={setOpen} />
     </>
   );
 }
