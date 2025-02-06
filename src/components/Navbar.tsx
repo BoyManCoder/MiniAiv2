@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div className="container flex flex-row flex-row justify-between items-center py-3">
+        <div className="container flex flex-row justify-between items-center py-3">
           <div className="flex items-center gap-2">
             <img src="/assets/LongLogo.png" className="w-34 ml-6 md:ml-20" />
           </div>

@@ -45,7 +45,7 @@ function Home() {
               <video
                 ref={videoRef}
                 className={`h-full w-full object-cover rounded transition-opacity duration-500 ${
-                  isPlaying ? "opacity-100" : "opacity-40"
+                  isPlaying ? "opacity-100" : "opacity-80"
                 }`}
                 src="/assets/into.mp4"
               ></video>
@@ -63,9 +63,9 @@ function Home() {
                 }`}
               >
                 {isPlaying ? (
-                  <AiOutlinePauseCircle className="text-5xl text-white" />
+                  <AiOutlinePauseCircle className="text-6xl text-white" />
                 ) : (
-                  <AiOutlinePlayCircle className="text-5xl text-white" />
+                  <AiOutlinePlayCircle className="text-6xl text-white" />
                 )}
               </button>
             </div>

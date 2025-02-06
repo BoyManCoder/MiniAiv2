@@ -1,99 +1,49 @@
-import React, { useState } from "react";
-import { MdMenu } from "react-icons/md";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import React from "react";
 
-function Navbar() {
-  const NavbarMenu = [
-    { id: 1, title: "Home", link: "#home" },
-    { id: 2, title: "Executives", link: "#exec" },
-    { id: 3, title: "Mission", link: "#mission" },
-    { id: 4, title: "Events", link: "#events" },
-  ];
+function Mission(){
+    // Declare the link in the function
+    const redirectToLink = (url) => {
+        window.location.href = url;  // Redirects to the URL
+    };
 
-  const [open, setOpen] = useState(false);
-
-  return (
-    <>
-      <nav>
-        <div className="container flex flex-col md:flex-row justify-between items-center py-3">
-          <div className="flex items-center gap-2">
-            <img src="/assets/LongLogo.png" className="w-34 ml-6 md:ml-20" />
-          </div>
-          <div className="hidden md:flex items-center gap-6 text-gray-600">
-            <ul className="flex items-center gap-6">
-              {NavbarMenu.map((item) => (
-                <li key={item.id}>
-                  <a
-                    href={item.link}
-                    className="inline-block py-1 px-3 hover:text-green-500"
-                  >
-                    {item.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.instagram.com/miniai.to?igsh=dnpydmc3aGQwY2Fr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl hover:bg-green-500 hover:text-white rounded-full p-2 duration-200"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/mini-ai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl hover:bg-green-500 hover:text-white rounded-full p-2 duration-200"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="mailto:miniai.toronto@gmail.com"
-              className="hover:bg-green-500 font-semibold hover:text-white rounded-md border-2 border-green-500 px-6 py-2 duration-200 hidden md:block"
-            >
-              Contact
-            </a>
-            <div className="md:hidden" onClick={() => setOpen(!open)}>
-              <MdMenu className="text-4xl" />
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Menu: Slide-in effect with horizontal layout */}
-        <AnimatePresence>
-          {open && (
-            <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -100 }}
-            transition={{ duration: 0.3 }}
-              className="absolute top-0 left-0 w-full bg-black text-white z-20"
-            >
-              <div className="w-full flex justify-center items-center py-5">
-                <ul className="flex items-center gap-6">
-                  {NavbarMenu.map((item) => (
-                    <li key={item.id}>
-                      <a
-                        href={item.link}
-                        className="py-2 px-4 hover:text-gray-400"
-                        onClick={() => setOpen(false)} // Close menu when link is clicked
-                      >
-                        {item.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
-    </>
-  );
+    return (
+        <>
+            <h1 className="mt-14 md:mt-40 mb-6 text-center text-4xl font-semibold">About Mini Ai</h1>
+            <section id="mission" className="w-screen h-200 md:h-110 flex justify-center items-center">
+                <div className="w-full h-full flex flex-col md:flex-row">
+                    <div className="w-full h-4/5 md:w-3/5 md:h-full flex flex-col md:flex-row justify-evenly items-center">
+                        <div className="h-1/2 w-5/6 md:w-2/5 md:h-full my-4">
+                            <h1 className="text-main text-3xl font-semibold mt-2 pb-2 border-black border-b-1">Our Identity</h1>
+                            <p className="w-full py-4 border-black border-b-1">At MiniAI, our mission is to make AI education accessible to all, especially underprivileged communities lacking cutting-edge technology exposure. We provide hands-on workshops, mentorship, and insights from industry leaders at companies like Amazon, Google, and Tesla, ensuring that every student—regardless of background—can explore and innovate.</p>
+                            <div className="slide-arrow text-2xl flex flex-row justify-start items-center">
+                                <button 
+                                    className="text-main font-semibold" 
+                                    onClick={() => redirectToLink('https://www.linkedin.com/company/mini-ai/')}>  {/* Example URL */}
+                                    Learn More
+                                </button>
+                                <h1 className="mx-4 text-main font-bold">{'>'}</h1>
+                            </div>
+                        </div>
+                        <div className="h-1/2 w-5/6 md:w-2/5 md:h-full my-4">
+                            <h1 className="text-main text-3xl font-semibold mt-2 pb-2 border-black border-b-1">Our Mission</h1>
+                            <p className="w-full py-4 border-black border-b-1">By breaking financial and systemic barriers, we empower youth with the skills to thrive in an AI-driven world. Our goal is to bridge the educational gap, inspire the next generation of diverse AI pioneers, and create a more inclusive future in technology.</p>
+                            <div className="slide-arrow text-2xl flex flex-row justify-start items-center">
+                                <button 
+                                    className="text-main font-semibold" 
+                                    onClick={() => redirectToLink("https://www.instagram.com/miniai.to?igsh=dnpydmc3aGQwY2Fr")}>  {/* Example URL */}
+                                    Learn More
+                                </button>
+                                <h1 className="mx-4 text-main font-bold">{'>'}</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-1/5 my-4 md:w-2/5 md:h-4/5 flex justify-center items-center">
+                        <img src="/assets/Class.jpg" className="h-full w-3/4 md:h-7/8 md:w-7/8 border-black border-1 md:border-2 rounded"/>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
 }
 
-export default Navbar;
+export default Mission;
