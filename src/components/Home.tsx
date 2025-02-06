@@ -58,7 +58,7 @@ function Home() {
               {/* Play/Pause Button with Fade Effect */}
               <button
                 onClick={handlePlayPause}
-                className={`absolute flex justify-center items-center w-16 h-16  bg-opacity-70 text-white rounded-full transition-opacity duration-500 ${
+                className={`absolute flex justify-center items-center w-20 h-20  bg-opacity-70 text-white rounded-full transition-opacity duration-500 ${
                   showButton ? "opacity-100" : "opacity-0"
                 }`}
               >
