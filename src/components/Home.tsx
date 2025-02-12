@@ -34,7 +34,7 @@ function Home() {
         <div className="h-full md:h-full w-full flex flex-col justify-center items-center relative z-10">
           <div className="h-1/5 md:h-1/15 w-full md:w-1/2">
             <h1 className="text-center my-4 text-bright text-4xl md:text-6xl font-semibold">
-              Welcome to Mini Ai
+              Welcome to MiniAI
             </h1>
           </div>
 

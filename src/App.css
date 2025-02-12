@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Liter&display=swap');
 
 html {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  font-family: 'Montserrat' !important;
+  font-family: 'Cantata', sans-serif, Arial, Helvetica !important;
   scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Cantata', sans-serif, Arial, Helvetica !important;
 }
 
 
